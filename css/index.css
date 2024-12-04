@@ -1,0 +1,98 @@
+h1{
+    font-weight: 500;
+}
+
+.center{
+    text-align: center;
+}
+
+
+/* General Section Styling */
+section {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.center h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Circle Container */
+.circle-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Circles */
+.img_ruta {
+    width: 150px;
+    height: 150px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Cross Inside Circle */
+.img_ruta::before, .img_ruta::after {
+    content: '';
+    position: absolute;
+    background-color: #8f8f8f;
+    width: 60%;
+    height: 5px;
+    border-radius: 2px;
+}
+
+.img_ruta::before {
+    transform: rotate(45deg);
+}
+
+.img_ruta::after {
+    transform: rotate(-45deg);
+}
+
+.conocenos-section {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.center h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    align-items: center; /* Center vertically */
+    width: 100%;
+    max-width: 1200px; /* Optional: Limit the width */
+    margin: 0 auto;
+    height: 300px; /* Adjust height as needed */
+}
+
+/* Card Style */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 400px; /* Set a fixed width for the card */
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left; /* Align text inside the card */
+}
+
+.gray {
+    background-color: #f5f5f5;
+}

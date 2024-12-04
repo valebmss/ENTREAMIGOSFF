@@ -1,0 +1,32 @@
+.cuadro{
+    width: 100%;
+    height: 900px;
+    background-color: red;
+    text-align: center ;
+    color: white;
+    margin: 0 auto;
+    max-width: 940px;
+    justify-content: center;
+}
+
+
+.padre{
+    height: 900px;
+    background-color: beige;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+
+.hijo{
+    width: 200px;
+    height: 300px;
+    top:50%;
+    position: absolute;
+    margin-top: -350px;
+    background-color: blue;
+
+}
