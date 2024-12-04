@@ -81,6 +81,15 @@ section {
     height: 300px; /* Adjust height as needed */
 }
 
+.card-container-center {
+    display: flex;
+    justify-content: center; /* Align to the left */
+    align-items: center; /* Center vertically */
+    width: 100%;
+    max-width: 1200px; /* Optional: Limit the width */
+    margin: 0 auto;
+    height: 300px; /* Adjust height as needed */
+}
 /* Card Style */
 .card {
     background-color: #ffffff;
@@ -96,3 +105,7 @@ section {
 .gray {
     background-color: #f5f5f5;
 }
+
+.huellitas {
+    height: 300px;
+}	
