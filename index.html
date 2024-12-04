@@ -3,187 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EntreAmigos</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title>Entre Amigos FF</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/global.css">
+
 </head>
 <body>
-    <header>
-        <section class="barra_uno">
-            <img class="perfil" src="img/icono_perfil.png" alt="esta es una imagen del icono">
+    <header class="header">
+        <div class="header-container">
+            <img class="perfil" src="img/icono_perfil.png" alt="Ícono de perfil">
             <h3><a class="agenda_boton" href="agenda.html">Agenda</a></h3>
-        </section>
-
-        <section class="barra_dos"> 
-            
-
-        
-                <input type="search"
-            id="consulta" name="c"
-            placeholder="">
-
-
-
-                <nav>
-                    <ul class="ul-links">
-                        <a href="nosotros.html"><li>Nosotros</li></a>
-                        <a href="instalaciones.html"><li>Instalaciones</li></a>
-                        <a href="servicios.html"><li>Servicios</li></a>
-                        <a href="blog.html"><li>Blog</li></a>
-                        <a href="contactanos.html"><li>Contactanos</li></a>
-                    </ul>
-                </nav>
-        </section>
-
-
-        
-
-
-        <img class="logo" src="img/img_logo.png">
-
-
-        
-    
+        </div>
     </header>
-
-    <div class="whats"> </div>
     
-    <section class="imagenfondo">
-    
-        <div class="conocenos_tittle">
-            <p>Conócenos</p>
-        </div>
-        <div class="textoconocenos"></div>
-    </section>
-
-
-    <section class="imagenfondo2">
-        
-        <div class="nuestrash">
-            <p>Nuestras huellitas</p>
-        </div>
-        <div class="textoh">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue.</p>
-        </div>
-        
-    </section>
-
-
-    <section class="imagenfondo3">
-     
-        <div class="nuestrar">
-            <p>Nuestra ruta</p>
-        </div>
-
-        <nav>
-            <ul class="rutas">
-                <li class="circulo_ruta"></li>
-                <li class="circulo_ruta"></li>
-                <li class="circulo_ruta"></li>
-                <li class="circulo_ruta"></li>
-            </ul>
-        </nav>
-
-    </section>
-
-    <section class="imagenfondo4">
-
-
-       
-
-
-
-        <div class="serviciosp">
-            <p>Servicios para tu amigo</p>
-        </div>
-
-
-            <ul class="servicios_cuadros">
-                <li class="cuadro_s"></li>
-                <li class="cuadro_s"></li>
-                <li class="cuadro_s"></li>
-                <li class="cuadro_s"></li>
-            </ul>
-
-    </section>
-
-    <section class="imagenfondo5">
-        
-        <div class="colitas">
-            <p>Colitas contentas</p>
-        </div>
-
-        <div class="cuadro_colitas">
-            <div class="img_colitas"></div>
-            <p class="texto_colitas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non.</p>
-            <ul class="carrusel">
-                <li class="carrusel"></li>
-                <li class="carrusel"></li>
-                <li class="carrusel"></li>
-                <li class="carrusel"></li>
-                <li class="carrusel"></li>
-                <li class="carrusel"></li>
-                <li class="carrusel"></li>
-                <li class="carrusel"></li>
+    <nav class="nav">
+        <div class="nav-container">
+            <img class="logo" src="img/img_logo.png" alt="Logo">
+            <input type="text" class="search-bar" placeholder="Buscar...">
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./instalaciones.html">Instalaciones</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contactanos.html">Contáctanos</a></li>
             </ul>
         </div>
-
-    </section>
-
-    <section class="imagenfondo6">
-       
-        <div class="nuestror">
-            <p>Nuestro rincón</p>
-        </div>
-
-        <div class="texto_rincon"></div>
-
-    </section>
-
-    <section class="imagenfondo7">
-        
-        <div class="aprende">
-            <p>Aprende sobre tu peludito</p>
-        </div>
-
-        <div class="cuadro_aprende1"></div>
-        <div class="cuadro_aprende2"></div>
-        <div class="cuadro_aprende3"></div>
-
-
-
-    </section>
+    </nav>
     
-    <section class="imagenfondo8">
+    <main>
+        <section class="conocenos-section gray">
+            <div class="center">
+                <h1>Conócenos</h1>
+            </div>
+            <div class="card-container">
+                <p class="card">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, temporibus molestiae! Iure nesciunt pariatur numquam dignissimos, tempore qui quo temporibus, repellat sed est, dolore natus? Labore rerum sequi ex animi.
+                </p>
+            </div>
+        </section>
         
-        <div class="actualizaciones">
-            <p>Actualizaciones para tu amigo</p>
-        </div>
+        <section>
+            <div class="center ">
+                <h1>Nuestras huellitas</h1>
+            </div>
+        </section>
+        <section>
+            <div class="center">
+                <h1>Nuestra ruta</h1>
 
+            </div>
+            <div class="circle-container">
+                <img src="" alt="" class="img_ruta">
+                <img src="" alt="" class="img_ruta">
+                <img src="" alt="" class="img_ruta">
+                <img src="" alt="" class="img_ruta">
+            </div>
 
-        <div class="texto_act">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non</p>
-        </div>
-        <input type="search"
-        id="newsletter" name="c"
-        placeholder="">
+        </section>
+        <section>
+            <div class="center">
+                <h1>Servicios para tu amigo</h1>
 
-    </section>
+            </div>
+        </section>
+        <section>
+            <div class="center">
+                <h1>Colitas contentas</h1>
 
- 
+            </div>
+        </section>
+        <section>
+            <div class="center">
+                <h1>Nuestro Rincón</h1>
+
+            </div>
+        </section>
+        <section>
+            <div class="center">
+                <h1>Aprende sobre tu peludo</h1>
+
+            </div>
+        </section>
+        <section>
+            <div class="center">
+                <h1>Actualizaciones para tu amigo</h1>
+
+            </div>
+        </section>
+    </main>
+    
 </body>
-
-<footer>
-    <section class="imagenfondo9">
-        
-        <div class="logo_foot" src="img/img_logo.png"></div>
-    </section>
-
-    <section class="imagenfondo10">
-
-        <div class="entre_final">
-            <p>Entre Amigos</p>
-        </div>
-    </section>
-
-</footer>
 </html>
