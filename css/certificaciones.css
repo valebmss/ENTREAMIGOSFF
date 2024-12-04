@@ -1,0 +1,202 @@
+/* General Styles */
+h1 {
+    font-weight: 500;
+}
+
+.center {
+    text-align: center;
+}
+
+/* General Section Styling */
+section {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.center h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Circle Container */
+.circle-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/*individual*/
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+/* Hero Section */
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: 300px;
+}
+
+.hero-image {
+    flex: 1;
+    height: 100%;
+    background-color: #ccc;
+    border: 2px dashed #aaa;
+    margin-right: 20px;
+}
+
+.hero-content {
+    flex: 1;
+    text-align: left;
+}
+
+
+.hero-content p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.hero-content .buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-content .buttons button {
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-content .buttons button:hover {
+    background-color: #ccc;
+}
+
+
+.image-placeholder {
+    width: 80%;
+    height: 80%;
+    background-color: #bbb;
+    border: 2px dashed #999;
+    
+}
+
+/* Certifications Section */
+.certifications {
+    padding: 20px;
+    text-align: center;
+}
+
+.certifications h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.certifications ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.certifications ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.pagination .dot.active {
+    background-color: #007BFF;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
