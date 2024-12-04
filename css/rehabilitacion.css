@@ -1,0 +1,184 @@
+/* Sección Rehabilitación */
+.rehabilitacion {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Para que sea responsive */
+}
+
+/* Imagen grande */
+.image-placeholder {
+    flex: 1;
+    height: 300px;
+    background-color: #e0e0e0;
+    position: relative;
+}
+
+.image-placeholder::before, .image-placeholder::after {
+    content: '';
+    position: absolute;
+    background-color: #8f8f8f;
+    width: 80%;
+    height: 2px;
+    top: 50%;
+    left: 10%;
+    transform: rotate(45deg);
+}
+
+.image-placeholder::after {
+    transform: rotate(-45deg);
+}
+
+/* Texto y botón */
+.text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.text-container h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.text-lines .line {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+.action-btn {
+    width: 100px;
+    height: 40px;
+    background-color: #c4c4c4;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #a0a0a0;
+}
+
+/* Sección Inferior */
+.section-inferior {
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.circle-placeholder {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-block .line {
+    width: 200px;
+    height: 2px;
+    background-color: #000;
+}
+
+/* Carrusel */
+.carousel {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+}
+
+.dot.active {
+    background-color: #8f8f8f;
+}
+
+/* Footer */
+footer {
+    padding: 10px 20px;
+    background-color: #d9d9d9;
+    text-align: center;
+}
+
+.footer-text {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .image-placeholder {
+        height: 200px;
+    }
+
+    .text-lines .line {
+        width: 80%;
+    }
+
+    .action-btn {
+        width: 80%;
+    }
+
+    .circle-placeholder {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-placeholder {
+        height: 150px;
+    }
+
+    .text-lines .line {
+        width: 60%;
+    }
+
+    .action-btn {
+        width: 100%;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+}
