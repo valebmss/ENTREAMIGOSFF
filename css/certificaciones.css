@@ -1,202 +1,175 @@
-/* General Styles */
-h1 {
-    font-weight: 500;
-}
-
-.center {
-    text-align: center;
-}
-
-/* General Section Styling */
-section {
-    padding: 20px 0;
-    text-align: center;
-}
-
-.center h1 {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-/* Circle Container */
-.circle-container {
+/* Sección Certificaciones */
+.certifications-section {
+    padding: 40px 20px;
+    background-color: #F5F5F5; /* Fondo claro */
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
 }
 
+.certifications-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
-/*individual*/
-.card {
-    background-color: #ffffff;
-    padding: 20px;
-    width: 400px;
+/* Imagen */
+.image-placeholder {
+    flex: 1;
+    height: 300px;
+    background-color: #EAEAEA;
     border-radius: 10px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: left;
+}
+
+/* Texto y Botones */
+.text-container {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
-}
-/* Hero Section */
-/* Hero Section */
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-    height: 300px;
-}
-
-.hero-image {
-    flex: 1;
-    height: 100%;
-    background-color: #ccc;
-    border: 2px dashed #aaa;
-    margin-right: 20px;
-}
-
-.hero-content {
-    flex: 1;
-    text-align: left;
-}
-
-
-.hero-content p{
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
-.hero-content .buttons {
-    display: flex;
-    gap: 15px;
-}
-
-.hero-content .buttons button {
-    padding: 10px 20px;
-    background-color: #ddd;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.hero-content .buttons button:hover {
-    background-color: #ccc;
-}
-
-
-.image-placeholder {
-    width: 80%;
-    height: 80%;
-    background-color: #bbb;
-    border: 2px dashed #999;
-    
-}
-
-/* Certifications Section */
-.certifications {
-    padding: 20px;
-    text-align: center;
-}
-
-.certifications h1 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.certifications ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-}
-
-.certifications ul li {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
     gap: 20px;
 }
 
-.buttons button {
+.section-title {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.text-lines .line {
+    width: 80%;
+    height: 2px;
+    background-color: #000;
+    margin: 5px auto;
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
+}
+
+.action-btn {
+    background-color: #D9D9D9;
+    color: #000;
+    border: none;
     padding: 10px 20px;
+    border-radius: 20px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    background-color: #f8f8f8;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-.buttons button:hover {
-    background-color: #e0e0e0;
+.action-btn:hover {
+    background-color: #C4C4C4;
 }
 
-/* Footer Styles */
-footer {
-    background-color: #f4f4f4;
-    padding: 20px;
+/* Sección Inferior */
+.footer-section {
+    padding: 40px 20px;
+    background-color: #F5F5F5;
     text-align: center;
 }
 
-.footer-content {
+.footer-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 20px 0;
+    gap: 20px;
 }
 
-.profile-picture {
+.circle-placeholder {
     width: 100px;
     height: 100px;
-    background-color: #bbb;
+    border: 2px solid #000;
     border-radius: 50%;
-    margin: 0 auto;
 }
 
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-links ul li {
-    margin: 10px 0;
-    font-size: 14px;
-}
-
-.pagination {
+.text-block {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 10px;
 }
 
-.pagination .dot {
+.text-block .line {
+    width: 200px;
+    height: 2px;
+    background-color: #000;
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+}
+
+.carousel .dot {
     width: 10px;
     height: 10px;
-    background-color: #ccc;
+    background-color: #D9D9D9;
     border-radius: 50%;
 }
 
-.pagination .dot.active {
-    background-color: #007BFF;
+.carousel .dot.active {
+    background-color: #8F8F8F;
 }
 
-/* Responsive Styles */
+footer {
+    background-color: #D9D9D9;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #000;
+}
+
+/* Responsividad */
 @media (max-width: 768px) {
-    nav ul {
+    .certifications-container {
         flex-direction: column;
     }
 
-    .footer-content {
+    .image-placeholder {
+        width: 100%;
+        height: 200px;
+    }
+
+    .text-container {
+        text-align: center;
+    }
+
+    .button-group {
         flex-direction: column;
+        gap: 10px;
+    }
+
+    .action-btn {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .circle-placeholder {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 20px;
+    }
+
+    .text-lines .line {
+        width: 90%;
+    }
+
+    .action-btn {
+        font-size: 14px;
+        padding: 8px 16px;
     }
 }
