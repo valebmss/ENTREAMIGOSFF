@@ -1,11 +1,11 @@
-h1{
+/* General Styles */
+h1 {
     font-weight: 500;
 }
 
-.center{
+.center {
     text-align: center;
 }
-
 
 /* General Section Styling */
 section {
@@ -56,57 +56,53 @@ section {
     transform: rotate(-45deg);
 }
 
+/* Section Conócenos */
 .conocenos-section {
     padding: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
-}
-
-.center h1 {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    margin-bottom: 20px;
 }
 
 /* Card Container */
 .card-container {
     display: flex;
-    justify-content: flex-start; /* Align to the left */
-    align-items: center; /* Center vertically */
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
-    max-width: 1200px; /* Optional: Limit the width */
+    max-width: 1200px;
     margin: 0 auto;
-    height: 300px; /* Adjust height as needed */
+    height: 300px;
 }
 
 .card-container-center {
     display: flex;
-    justify-content: center; /* Align to the left */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    max-width: 1200px; /* Optional: Limit the width */
+    max-width: 1200px;
     margin: 0 auto;
-    height: 300px; /* Adjust height as needed */
+    height: 300px;
 }
+
 /* Card Style */
 .card {
     background-color: #ffffff;
     padding: 20px;
-    width: 400px; /* Set a fixed width for the card */
+    width: 400px;
     border-radius: 10px;
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    text-align: left; /* Align text inside the card */
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
 }
 
+/* Section Huellitas */
 .gray {
     background-color: #f5f5f5;
 }
@@ -115,11 +111,13 @@ section {
     height: 300px;
 }
 
+/* Section Ruta */
 .ruta {
-
     background-color: #D9D9D9;
     height: 300px;
-}	
+}
+
+/* Card Content */
 .card-content {
     background-color: #EDEDED;
     width: 100%;
@@ -139,22 +137,7 @@ section {
     color: #000;
 }
 
-.img-placeholder::before, .img-placeholder::after {
-    content: '';
-    position: absolute;
-    background-color: #8f8f8f;
-    width: 70%;
-    height: 2px;
-}
-
-.img-placeholder::before {
-    transform: rotate(45deg);
-}
-
-.img-placeholder::after {
-    transform: rotate(-45deg);
-}
-
+/* Placeholder for Image */
 .img-placeholder {
     width: 100%;
     height: 100px;
@@ -165,21 +148,13 @@ section {
     align-items: center;
 }
 
-/* Sección "Colitas contentas" */
+/* Section Colitas contentas */
 .colitas-contentas {
     padding: 40px 0;
     background-color: #B3A9B4;
     text-align: center;
 }
 
-.colitas-contentas h1 {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-/* Contenedor principal */
 .colitas-container {
     display: flex;
     justify-content: center;
@@ -190,16 +165,13 @@ section {
     padding: 20px;
 }
 
-/* Imagen circular */
 .circle-placeholder {
     width: 150px;
     height: 150px;
     background-color: #D9D9D9;
     border-radius: 50%;
-    flex-shrink: 0;
 }
 
-/* Texto y carrusel */
 .colitas-text {
     flex-grow: 1;
     display: flex;
@@ -208,21 +180,13 @@ section {
     gap: 20px;
 }
 
-/* Líneas de texto */
-.lines {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.line {
+.lines .line {
     width: 250px;
     height: 2px;
     background-color: #fff;
     border-radius: 1px;
 }
 
-/* Carrusel de puntos */
 .carrusel {
     display: flex;
     gap: 10px;
@@ -239,23 +203,14 @@ section {
     background-color: #8F8F8F;
 }
 
-
-/* Sección Nuestro Rincón */
+/* Section Nuestro rincón */
 .nuestro-rincon {
     padding: 40px 0;
-    background-color: #F5F7F2; /* Fondo claro */
+    background-color: #F5F7F2;
     text-align: center;
     position: relative;
 }
 
-.nuestro-rincon h1 {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-/* Contenedor del carrusel */
 .carousel-container {
     display: flex;
     justify-content: center;
@@ -263,17 +218,13 @@ section {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0px;
 }
 
-/* Botones del carrusel */
 .carousel-btn {
     background: none;
     border: none;
     font-size: 24px;
-    font-weight: bold;
     cursor: pointer;
-    color: #000;
     width: 40px;
     height: 40px;
     display: flex;
@@ -281,17 +232,6 @@ section {
     align-items: center;
 }
 
-.carousel-btn.left-btn {
-    position: absolute;
-    left: 10%;
-}
-
-.carousel-btn.right-btn {
-    position: absolute;
-    right: 10%;
-}
-
-/* Imagen del carrusel */
 .carousel-image {
     width: 100%;
     height: 300px;
@@ -300,15 +240,6 @@ section {
     position: relative;
 }
 
-.image-placeholder {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, transparent 49%, #000 50%, transparent 51%);
-    background-size: 100% 100%;
-    position: absolute;
-}
-
-/* Tarjeta inferior */
 .info-card {
     background-color: #C4C4C4;
     width: 80%;
@@ -317,22 +248,14 @@ section {
     margin: 20px auto 0;
 }
 
-/* Sección Aprende sobre tu peludito */
+/* Section Aprende sobre tu peludito */
 .aprende-peludito {
     padding: 40px 0;
-    background-color: #F9F9F9; /* Fondo claro */
+    background-color: #F9F9F9;
     text-align: center;
     width: 100%;
 }
 
-.aprende-peludito h1 {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 30px;
-}
-
-/* Contenedor de los elementos */
 .content-container {
     display: flex;
     justify-content: center;
@@ -342,7 +265,6 @@ section {
     margin: 0 auto;
 }
 
-/* Cajas laterales */
 .side-box {
     width: 200px;
     height: 150px;
@@ -350,7 +272,6 @@ section {
     border-radius: 10px;
 }
 
-/* Caja principal */
 .main-box {
     flex-grow: 1;
     height: 300px;
@@ -362,31 +283,14 @@ section {
     position: relative;
 }
 
-/* Placeholder de la imagen central */
-.image-placeholder {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, transparent 49%, #000 50%, transparent 51%);
-    background-size: 100% 100%;
-    position: absolute;
-}
-
-/* Sección Actualizaciones para tu amigo */
+/* Section Actualizaciones */
 .actualizaciones-amigo {
     padding: 40px 0;
-    background-color: #D9D9D9; /* Fondo gris */
+    background-color: #D9D9D9;
     text-align: center;
     width: 100%;
 }
 
-.actualizaciones-amigo h1 {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-/* Contenedor principal */
 .actualizaciones-container {
     display: flex;
     justify-content: center;
@@ -396,7 +300,6 @@ section {
     margin: 0 auto;
 }
 
-/* Contenedor del campo de texto */
 .input-container {
     display: flex;
     flex-direction: column;
@@ -424,7 +327,6 @@ section {
     margin: 5px 0;
 }
 
-/* Botón Enviar */
 .send-btn {
     background-color: #C4C4C4;
     color: #fff;
@@ -434,10 +336,53 @@ section {
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    min-width: 120px;
 }
 
-.send-btn:hover {
-    background-color: #A9A9A9;
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .card-container, .colitas-container, .content-container {
+        flex-direction: column;
+    }
+
+    .info-card, .text-input, .send-btn {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .circle-container, .card-container, .colitas-container {
+        flex-direction: column;
+    }
+
+    .img_ruta, .circle-placeholder, .side-box {
+        width: 120px;
+        height: 120px;
+    }
+
+    .main-box {
+        height: 200px;
+    }
+
+    .lines .line {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .img_ruta, .circle-placeholder, .side-box {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .main-box {
+        height: 150px;
+    }
+
+    .send-btn {
+        width: 100%;
+    }
 }
