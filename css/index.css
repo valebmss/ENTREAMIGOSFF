@@ -164,3 +164,280 @@ section {
     justify-content: center;
     align-items: center;
 }
+
+/* Sección "Colitas contentas" */
+.colitas-contentas {
+    padding: 40px 0;
+    background-color: #B3A9B4;
+    text-align: center;
+}
+
+.colitas-contentas h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Contenedor principal */
+.colitas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Imagen circular */
+.circle-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* Texto y carrusel */
+.colitas-text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Líneas de texto */
+.lines {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.line {
+    width: 250px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+/* Carrusel de puntos */
+.carrusel {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
+.dot.active {
+    background-color: #8F8F8F;
+}
+
+
+/* Sección Nuestro Rincón */
+.nuestro-rincon {
+    padding: 40px 0;
+    background-color: #F5F7F2; /* Fondo claro */
+    text-align: center;
+    position: relative;
+}
+
+.nuestro-rincon h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Contenedor del carrusel */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+/* Botones del carrusel */
+.carousel-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-btn.left-btn {
+    position: absolute;
+    left: 10%;
+}
+
+.carousel-btn.right-btn {
+    position: absolute;
+    right: 10%;
+}
+
+/* Imagen del carrusel */
+.carousel-image {
+    width: 100%;
+    height: 300px;
+    background-color: #EAEDEA;
+    border-radius: 10px;
+    position: relative;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent 49%, #000 50%, transparent 51%);
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+/* Tarjeta inferior */
+.info-card {
+    background-color: #C4C4C4;
+    width: 80%;
+    height: 60px;
+    border-radius: 8px;
+    margin: 20px auto 0;
+}
+
+/* Sección Aprende sobre tu peludito */
+.aprende-peludito {
+    padding: 40px 0;
+    background-color: #F9F9F9; /* Fondo claro */
+    text-align: center;
+    width: 100%;
+}
+
+.aprende-peludito h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de los elementos */
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cajas laterales */
+.side-box {
+    width: 200px;
+    height: 150px;
+    background-color: #EAEAEA;
+    border-radius: 10px;
+}
+
+/* Caja principal */
+.main-box {
+    flex-grow: 1;
+    height: 300px;
+    background-color: #DAD7D9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Placeholder de la imagen central */
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent 49%, #000 50%, transparent 51%);
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+/* Sección Actualizaciones para tu amigo */
+.actualizaciones-amigo {
+    padding: 40px 0;
+    background-color: #D9D9D9; /* Fondo gris */
+    text-align: center;
+    width: 100%;
+}
+
+.actualizaciones-amigo h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Contenedor principal */
+.actualizaciones-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contenedor del campo de texto */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.text-input {
+    background: none;
+    border: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 0;
+    outline: none;
+    width: 100%;
+    color: #000;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin: 5px 0;
+}
+
+/* Botón Enviar */
+.send-btn {
+    background-color: #C4C4C4;
+    color: #fff;
+    border: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 120px;
+}
+
+.send-btn:hover {
+    background-color: #A9A9A9;
+}
