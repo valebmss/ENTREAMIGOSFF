@@ -1,0 +1,180 @@
+/* Sección Adiestramiento */
+.adiestramiento {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.adiestramiento h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de tarjetas */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Para hacer que las tarjetas se ajusten en pantallas pequeñas */
+}
+
+.card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Círculo en las tarjetas */
+.circle-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+}
+
+/* Líneas de texto */
+.text-lines .line {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+.small-lines .line {
+    width: 50%;
+    height: 2px;
+    background-color: #000;
+}
+
+/* Botón de las tarjetas */
+.card-btn {
+    width: 50px;
+    height: 30px;
+    background-color: #c4c4c4;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+    background-color: #a0a0a0;
+}
+
+/* Sección Inferior */
+.section-inferior {
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.circle-placeholder {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-block .line {
+    width: 200px;
+    height: 2px;
+    background-color: #000;
+}
+
+/* Carrusel */
+.carousel {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+}
+
+.dot.active {
+    background-color: #8f8f8f;
+}
+
+/* Footer */
+footer {
+    padding: 10px 20px;
+    background-color: #d9d9d9;
+    text-align: center;
+}
+
+.footer-text {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .text-lines .line {
+        width: 80%;
+    }
+
+    .small-lines .line {
+        width: 40%;
+    }
+
+    .circle-placeholder {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .circle-placeholder {
+        width: 60px;
+        height: 60px;
+    }
+
+    .text-lines .line,
+    .small-lines .line {
+        width: 60%;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+}
